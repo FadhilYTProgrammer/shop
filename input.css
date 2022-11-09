@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .card{
+        @apply bg-white text-black w-72 min-h-[10rem] shadow-lg rounded-md
+        overflow-hidden
+    }
+
+    .badge{
+        @apply px-3 py-1 rounded-full text-xs bg-gray-50
+    }
+
+    .product-title{
+        @apply font-semibold text-2xl overflow-ellipsis whitespace-nowrap
+    }
+
+    .discount-percent{
+        @apply bg-green-400 px-1.5 py-0.5 rounded-md text-xs text-white
+    }
+
+    .btn-primary {
+        @apply bg-red-500/80 hover:bg-red-500/90 px-6 py-2 rounded-md text-white font-medium tracking-wider transition
+    }
+
+    .btn-icon {
+        @apply flex flex-grow justify-center items-center bg-gray-300/60 hover:bg-gray-300/80 transition rounded-md
+    }
+}
